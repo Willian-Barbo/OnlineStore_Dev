@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Store</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">Modern Store</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Produtos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Bem-Vindo à Modern Store</h1>
+            <p>Seu melhor lugar de Produtos Modernos</p>
+            <a href="#products" class="btn-primary">Comprar Agora</a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section" id="products">
+        <h2>Nossos Produtos</h2>
+        <div class="product-list" id="product-list">
+            <div class="product">
+                <h3>Iphones</h3>
+                <img src="assets/phone.png" alt="Iphone" />
+                <p>Preço: R$ 899,99</p>
+                <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <h3>Notebooks</h3>
+                <img src="assets/laptop.png" alt="Notebook" />
+                <p>Preço: R$ 2399,00</p>
+                <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <h3>Air Jordan</h3>
+                <img src="assets/air_jordan.png" alt="Air Jordan" />
+                <p>Preço: R$ 49,99</p>
+                <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <h3>Headset</h3>
+                <img src="assets/headphones.png" alt="Headset" />
+                <p>Preço: R$ 749,99</p>
+                <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <h3>Livros de Harry Potter</h3>
+                <img src="assets/harry_potter.png" alt="Harry Potter" />
+                <p>Preço: R$ 150,99</p>
+                <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <h3>Samsung S22 Ultra</h3>
+                <img src="assets/samsung.png" alt="Samsung S22 Ultra" />
+                <p>Preço: R$ 799,99</p>
+                <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+
+        <!-- Carrinho de Compras -->
+        <div class="cart-section">
+            <h2>Carrinho de Compras</h2>
+            <div class="cart-items">
+                <!-- Itens do carrinho serão exibidos aqui -->
+            </div>
+            <div>Total: R$ <span id="cart-total">0,00</span></div>
+            <button class="finalizar-compra-btn" onclick="checkout()">Finalizar Compra</button>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <h2>Perguntas Frequentes</h2>
+        <div class="faq-item">
+            <h3 class="faq-question">Como faço um pedido?</h3>
+            <p class="faq-answer" style="display: none;">Você pode navegar pelos nossos produtos e clicar em "Adicionar
+                ao Carrinho" para fazer um pedido.</p>
+        </div>
+        <div class="faq-item">
+            <h3 class="faq-question">Quais métodos de pagamento são aceitos?</h3>
+            <p class="faq-answer" style="display: none;">Aceitamos cartões de crédito, PayPal e outras formas de
+                pagamentos.</p>
+        </div>
+        <div class="faq-item">
+            <h3 class="faq-question">Qual é o prazo de entrega?</h3>
+            <p class="faq-answer" style="display: none;">O prazo de entrega varia de acordo com a sua localização. Você
+                verá a estimativa no checkout.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Modern Store. Todos os Direitos Reservados.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
